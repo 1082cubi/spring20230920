@@ -66,13 +66,50 @@ public class Controller10 {
     @RequestMapping("sub6")
     public void method6(Model model) {
         List<MyDto9> list = new ArrayList<>();
-        list.add(new MyDto9("우유","성","이름","지역","number"));
-        list.add(new MyDto9("31L","son","km","football","010"));
-        list.add(new MyDto9("32L","lee","ki","paris","011"));
-        list.add(new MyDto9("33L","김","두식","서울","02"));
-        list.add(new MyDto9("34L","김","봉석","부산","03"));
-        list.add(new MyDto9("35L","장","희수","제주","50"));
+        list.add(new MyDto9("우유", "성", "이름", "지역", "number"));
+        list.add(new MyDto9("31L", "son", "km", "football", "010"));
+        list.add(new MyDto9("32L", "lee", "ki", "paris", "011"));
+        list.add(new MyDto9("33L", "김", "두식", "서울", "02"));
+        list.add(new MyDto9("34L", "김", "봉석", "부산", "03"));
+        list.add(new MyDto9("35L", "장", "희수", "제주", "50"));
 
-        model.addAttribute("moving",list);
+        model.addAttribute("moving", list);
+    }
+
+    @RequestMapping("sub7")
+    public void method7(Model model) {
+        model.addAttribute("a", 3);
+        model.addAttribute("b", 5);
+
+        model.addAttribute("c", "8");
+        model.addAttribute("d", "9");
+    }
+
+    @RequestMapping("sub8")
+    public void method8(Model model) {
+        model.addAttribute("a", 3);
+        model.addAttribute("b", 5);
+
+        model.addAttribute("c", "java");
+        model.addAttribute("d", "spring");
+
+        model.addAttribute("e", "11");
+        model.addAttribute("f", "2");
+        model.addAttribute("g", 2);
+        // ${e > f}
+    }
+
+    @RequestMapping("sub9")
+    public void method9(Model model) {
+        model.addAttribute("a", "java");
+        model.addAttribute("b", "");
+
+        model.addAttribute("c", List.of(3,4));
+        model.addAttribute("d", List.of());
+
+        model.addAttribute("e", Map.of("name","son"));
+        model.addAttribute("f", Map.of());
+
+        model.addAttribute("g", null);
     }
 }
