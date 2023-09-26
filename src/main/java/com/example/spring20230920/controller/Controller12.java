@@ -36,4 +36,13 @@ public class Controller12 {
 
 
     }
+
+    @RequestMapping("sub5")
+    public void method5() {
+    }
+
+    @RequestMapping("sub6")
+    public void method6(@RequestParam("q") String query, Model model) {
+        model.addAttribute("result", query + "검색결과");
+    }
 }
