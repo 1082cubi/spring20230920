@@ -8,7 +8,7 @@ SELECT *
 FROM customers
 WHERE Country='Mexico';
 SELECT * FROM customers WHERE Country = 'mexico';
-SELECT * FROM customers WHERE Country = 'MEXICO'; -- 대소문자 구분 안함
+SELECT * FROM Customers WHERE Country = 'MEXICO'; -- 대소문자 구분 안함
 SELECT * FROM customers WHERE Country = 'France'; -- 문자열은 ''
 SELECT * FROM customers WHERE CustomerID = 3; -- 문자열은 '' -- 수형식은 따음표 없이
 SELECT * FROM customers WHERE CustomerID = '3'; -- 문자열은 '' -- 써도 됨

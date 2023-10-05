@@ -20,7 +20,7 @@ FROM customers; -- table 명 나열
 
 SELECT CustomerID,CustomerName
 FROM customers;
-SELECT CustomerID,CustomerName,Country
+SELECT DISTINCT Country
 FROM customers;
 SELECT CustomerName,CustomerID,Country
 FROM customers;

@@ -7,5 +7,5 @@ public class MyDto16 {
     private Integer pid;
     private String productName;
     private String unit;
-    private double price;
+    private Double price;
 }
