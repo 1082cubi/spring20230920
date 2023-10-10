@@ -65,7 +65,11 @@ SELECT customerId id,
        customerName name
 FROM customers
 ORDER BY id
+<<<<<<< HEAD
 LIMIT 0, 5;
+=======
+LIMIT 0, 5
+>>>>>>> origin/master
 
 SELECT COUNT(*) FROM customers
 
