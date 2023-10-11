@@ -75,7 +75,7 @@ public class Controller23 {
                     SELECT * FROM CUSTOMERS
                                 WHERE
                 """;
-        if (searchType.equals("name1")) {
+        if (searchType.equals("na2me1")) {
             sql += "customerName LIKE ?";
         } else if (searchType.equals("name2")) {
             sql += "contactname LIKE ?";
