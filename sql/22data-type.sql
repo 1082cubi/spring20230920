@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 -- mariadb INT - java int
 --         DEC -      double
 --     VARCHAR -      String
@@ -19,7 +18,7 @@ INSERT INTO my_table12 (int_col, dec_col, str_col, date_col, date_time_col)
 
 SELECT *
 FROM my_table12;
-=======
+
 -- mariadb INT - java in
 --          DEC - double
 --   VARCHAR - String
@@ -37,4 +36,3 @@ CREATE TABLE my_table12 (
 
 
 SELECT * FROM my_table12;
->>>>>>> origin/master
