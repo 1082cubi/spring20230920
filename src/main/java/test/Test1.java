@@ -1,14 +1,15 @@
 package test;
 
-//import java.util.Stack;
-//
-//public class Test1 {
-//    String solution(String my_string) {
-//      String[] a = my_string.split("");
-//        Stack<String> stack = new Stack<>();
-//        for(String b : my_string) {
-//
-//        }
-//
-//    }
-//}
+public class Test1 {
+  class Solution {
+       int[] solution(String[] strlist) {
+          int[] answer = {};
+          int[] A = new int[strlist.length];
+          for (int i = 0; i < strlist.length; i++) {
+
+          }
+          return answer;
+
+      }
+  }
+
