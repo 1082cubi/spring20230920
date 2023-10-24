@@ -240,7 +240,17 @@
         </script>
     </div>
 </div>
-
+<div>
+    <div>
+    <button onclick="ajax13()">button13</button>
+        <script>
+            function ajax13(){
+                // axios.requst
+                axios.get("/main35/su11");
+            }
+        </script>
+</div>
+</div>
 
 </body>
 </html>
