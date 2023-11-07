@@ -64,10 +64,10 @@ public class Controller16 {
     @GetMapping("sub4")
     public void method4(Model model, HttpSession session) {
         Object modelAttr1 = model.getAttribute("modelAttr1");
-        Object sessionAttr1 = session.getAttribute("sessionAttr1");
+        Object sessionAttr2 = session.getAttribute("sessionAttr2");
 
         System.out.println("modelAttr1 = " + modelAttr1);
-        System.out.println("sessionAttr1 = " + sessionAttr1);
+        System.out.println("sessionAttr2 = " + sessionAttr2);
 
         System.out.println("Controller16.method4");
         System.out.println("System.identityHashCode(model) = " + System.identityHashCode(model));
@@ -95,7 +95,7 @@ public class Controller16 {
     public String method8(String email) {
         String processed = email + "processed";
 
-        return "redirect:/main16/sub9?p" + processed;
+        return "redirect:/main16/sub9?" + processed;
     }
 
     @GetMapping("sub9")
