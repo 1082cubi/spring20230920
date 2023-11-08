@@ -1,17 +1,21 @@
 package test;
 
+
+import org.apache.coyote.http11.upgrade.UpgradeServletOutputStream;
+
 import java.util.Arrays;
 
 public class Text2 {
     public static void main(String[] args) {
-        int[] numbers = new int[]{0, 31, 24, 10, 1, 9};
+     class Solution {
+         int n = 0;
 
-        Arrays.sort(numbers);
-        System.out.println(numbers[numbers.length-1]);
-        System.out.println(numbers[numbers.length-2]);
+         public int solution(int[] sides) {
+             Arrays.sort(sides);
 
-        int[] sort = Arrays.stream(numbers).boxed().sorted((a,b) -> b - a).mapToInt(Integer::intValue).toArray();
-        System.out.println(sort[0]);
-        System.out.println(sort[1]);
+
+             return 0;
+         }
+     }
     }
 }
